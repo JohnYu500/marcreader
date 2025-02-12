@@ -1,0 +1,14 @@
+C:\Users\gyu\source\marcreader\bin\Debug\net9.0\marcreader.exe
+C:\Users\gyu\source\marcreader\bin\Debug\net9.0\marcreader.deps.json
+C:\Users\gyu\source\marcreader\bin\Debug\net9.0\marcreader.runtimeconfig.json
+C:\Users\gyu\source\marcreader\bin\Debug\net9.0\marcreader.dll
+C:\Users\gyu\source\marcreader\bin\Debug\net9.0\marcreader.pdb
+C:\Users\gyu\source\marcreader\obj\Debug\net9.0\marcreader.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gyu\source\marcreader\obj\Debug\net9.0\marcreader.AssemblyInfoInputs.cache
+C:\Users\gyu\source\marcreader\obj\Debug\net9.0\marcreader.AssemblyInfo.cs
+C:\Users\gyu\source\marcreader\obj\Debug\net9.0\marcreader.csproj.CoreCompileInputs.cache
+C:\Users\gyu\source\marcreader\obj\Debug\net9.0\marcreader.dll
+C:\Users\gyu\source\marcreader\obj\Debug\net9.0\refint\marcreader.dll
+C:\Users\gyu\source\marcreader\obj\Debug\net9.0\marcreader.pdb
+C:\Users\gyu\source\marcreader\obj\Debug\net9.0\marcreader.genruntimeconfig.cache
+C:\Users\gyu\source\marcreader\obj\Debug\net9.0\ref\marcreader.dll

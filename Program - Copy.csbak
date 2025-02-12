@@ -1,0 +1,134 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string marcFilePath = @"C:\Users\gyu\source\marcreader\naco.aut.data.d250122prod"; // Path to your MARC file
+        List<MarcRecord> records = ParseMarcFile(marcFilePath);
+
+        // Report total number of records
+        Console.WriteLine($"Total number of records: {records.Count}");
+        Console.WriteLine();
+
+        // Display fields of each record in a user-friendly format
+        foreach (var record in records)
+        {
+            Console.WriteLine("----- Record -----");
+            Console.WriteLine($"Leader: {record.Leader}");
+            foreach (var field in record.Fields)
+            {
+                Console.WriteLine($"{field.Tag}: {field.Value}");
+            }
+            Console.WriteLine();
+        }
+    }
+
+    static List<MarcRecord> ParseMarcFile(string filePath)
+    {
+        List<MarcRecord> records = new List<MarcRecord>();
+        byte[] fileBytes = File.ReadAllBytes(filePath);
+
+        int position = 0;
+        while (position < fileBytes.Length)
+        {
+            // Read the record length (first 5 bytes of the leader)
+            string recordLengthStr = Encoding.UTF8.GetString(fileBytes, position, 5);
+            int recordLength = int.Parse(recordLengthStr);
+
+            // Extract the record data
+            byte[] recordBytes = new byte[recordLength];
+            Array.Copy(fileBytes, position, recordBytes, 0, recordLength);
+            position += recordLength;
+
+            // Parse the record
+            MarcRecord record = ParseMarcRecord(recordBytes);
+            records.Add(record);
+        }
+
+        return records;
+    }
+
+    static MarcRecord ParseMarcRecord(byte[] recordBytes)
+    {
+        MarcRecord record = new MarcRecord();
+
+        // Read the leader (first 24 bytes)
+        record.Leader = Encoding.UTF8.GetString(recordBytes, 0, 24);
+
+        // Read the directory
+        int baseAddress = int.Parse(Encoding.UTF8.GetString(recordBytes, 12, 5));
+        int directoryEnd = baseAddress - 1;
+
+        int dirPosition = 24;
+        while (dirPosition < directoryEnd)
+        {
+            // Read the directory entry (12 bytes per entry)
+            string tag = Encoding.UTF8.GetString(recordBytes, dirPosition, 3);
+            int fieldLength = int.Parse(Encoding.UTF8.GetString(recordBytes, dirPosition + 3, 4));
+            int fieldStart = int.Parse(Encoding.UTF8.GetString(recordBytes, dirPosition + 7, 5));
+
+            // Extract the field data
+            string fieldData = Encoding.UTF8.GetString(recordBytes, baseAddress + fieldStart, fieldLength);
+
+            // Parse the field
+            MarcField field = ParseMarcField(tag, fieldData);
+            record.Fields.Add(field);
+
+            dirPosition += 12;
+        }
+
+        return record;
+    }
+
+    static MarcField ParseMarcField(string tag, string fieldData)
+    {
+        MarcField field = new MarcField { Tag = tag };
+
+        if (tag == "001" || tag == "003" || tag == "005" || tag == "008")
+        {
+            // Control field (no indicators or subfields)
+            field.Value = fieldData;
+        }
+        else
+        {
+            // Data field (with indicators and subfields)
+            char[] indicators = new char[] { fieldData[0], fieldData[1] };
+            string subfieldData = fieldData.Substring(2);
+
+            StringBuilder fieldValue = new StringBuilder();
+            fieldValue.Append($"Indicators: {indicators[0]}{indicators[1]} | ");
+
+            // Parse subfields
+            string[] subfields = subfieldData.Split('$');
+            for (int i = 1; i < subfields.Length; i++)
+            {
+                if (subfields[i].Length > 0)
+                {
+                    char subfieldCode = subfields[i][0];
+                    string subfieldValue = subfields[i].Substring(1);
+                    fieldValue.Append($"${subfieldCode}: {subfieldValue} ");
+                }
+            }
+
+            field.Value = fieldValue.ToString();
+        }
+
+        return field;
+    }
+}
+
+class MarcRecord
+{
+    public string Leader { get; set; }
+    public List<MarcField> Fields { get; set; } = new List<MarcField>();
+}
+
+class MarcField
+{
+    public string Tag { get; set; }
+    public string Value { get; set; }
+}

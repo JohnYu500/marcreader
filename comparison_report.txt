@@ -1,0 +1,719 @@
+----- Comparison Report -----
+
+The files compared: 
+QA: C:\Users\gyu\source\marcreader\naco.aut.data.d20250122qa
+Prod: C:\Users\gyu\source\marcreader\naco.aut.data.d250122prod
+
+The two file have the same number of records and every record matches based on the control number. 
+QA records: 18; Prod records: 18
+
+The comparison details are below.
+Control Number: 9818977462306676
+
+Leader:
+| File       | Leader                   | Equal  |
+| QA         | 00441nz  a2200121n  4500 | False  |
+| PROD       | 00436nz  a2200121n  4500 | False  |
+
+Fields:
+| Tag   | File       | Indicators   | Value/Subfields                                                                  | Equal  |
+--------------------------------------------------------------------------------------------------------------------------
+| 001   | QA         |              | 9818977462306676                                                                | True   |
+| 001   | PROD       |              | 9818977462306676                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 003   | QA         |              | DNLM                                                                            | True   |
+| 003   | PROD       |              | DNLM                                                                            | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 005   | QA         |              | 20250121095852.0                                                                | False  |
+| 005   | PROD       |              | 20250122000000.0                                                                | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 008   | QA         |              | 250122n| azannaabn          |n aaa      annaa                                   | False  |
+| 008   | PROD       |              | 250122n| azannaabn          |n aaa                                              | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 010   | QA         |              | $a: n 2025180236                                                                | True   |
+| 010   | PROD       |              | $a: n 2025180236                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 040   | QA         |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+| 040   | PROD       |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 100   | QA         | 1            | $a: Filelfo, Francesco, $d: 1398-1481. $t: Works. $k: Selections                | True   |
+| 100   | PROD       | 1            | $a: Filelfo, Francesco, $d: 1398-1481. $t: Works. $k: Selections                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 670   | QA         |              | $a: Franciscus Philelfus Lodovico Mariae Sphortiae Barhi duci ac ducali primario locu[m]tenenti sal[utem] pl[urimam] d[icit], 1483-1484 | True   |
+| 670   | PROD       |              | $a: Franciscus Philelfus Lodovico Mariae Sphortiae Barhi duci ac ducali primario locu[m]tenenti sal[utem] pl[urimam] d[icit], 1483-1484 | True   |
+--------------------------------------------------------------------------------------------------------------------------
+
+Control Number: 9818977462206676
+
+Leader:
+| File       | Leader                   | Equal  |
+| QA         | 00553nz  a2200145n  4500 | False  |
+| PROD       | 00548nz  a2200145n  4500 | False  |
+
+Fields:
+| Tag   | File       | Indicators   | Value/Subfields                                                                  | Equal  |
+--------------------------------------------------------------------------------------------------------------------------
+| 001   | QA         |              | 9818977462206676                                                                | True   |
+| 001   | PROD       |              | 9818977462206676                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 003   | QA         |              | DNLM                                                                            | True   |
+| 003   | PROD       |              | DNLM                                                                            | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 005   | QA         |              | 20250121134753.0                                                                | False  |
+| 005   | PROD       |              | 20250122000000.0                                                                | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 008   | QA         |              | 250122n| azannaabn          |n aaa      annaa                                   | False  |
+| 008   | PROD       |              | 250122n| azannaabn          |n aaa                                              | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 010   | QA         |              | $a: n 2025180237                                                                | True   |
+| 010   | PROD       |              | $a: n 2025180237                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 040   | QA         |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+| 040   | PROD       |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 046   | QA         |              | $s: 1628 $t: 1654 $2: edtf                                                      | True   |
+| 046   | PROD       |              | $s: 1628 $t: 1654 $2: edtf                                                      | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 100   | QA         | 1            | $a: Arcadio, Alessandro, $d: active 1628-1654                                   | True   |
+| 100   | PROD       | 1            | $a: Arcadio, Alessandro, $d: active 1628-1654                                   | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 670   | QA         |              | $a: Contemplationi medicinali sopra del contaggio, 1632: $b: title page (d'Alessandro Arcadio medico, filosofo) | True   |
+| 670   | QA         |              | $a: OCLC, accessed Jan. 21, 2024 $b: (hdg.: Arcadio, Alessandro, active 1628-1654; usage: Alessandro Arcadio) | True   |
+| 670   | PROD       |              | $a: Contemplationi medicinali sopra del contaggio, 1632: $b: title page (d'Alessandro Arcadio medico, filosofo) | True   |
+| 670   | PROD       |              | $a: OCLC, accessed Jan. 21, 2024 $b: (hdg.: Arcadio, Alessandro, active 1628-1654; usage: Alessandro Arcadio) | True   |
+--------------------------------------------------------------------------------------------------------------------------
+
+Control Number: 9818977462106676
+
+Leader:
+| File       | Leader                   | Equal  |
+| QA         | 00717nz  a2200133n  4500 | False  |
+| PROD       | 00712nz  a2200133n  4500 | False  |
+
+Fields:
+| Tag   | File       | Indicators   | Value/Subfields                                                                  | Equal  |
+--------------------------------------------------------------------------------------------------------------------------
+| 001   | QA         |              | 9818977462106676                                                                | True   |
+| 001   | PROD       |              | 9818977462106676                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 003   | QA         |              | DNLM                                                                            | True   |
+| 003   | PROD       |              | DNLM                                                                            | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 005   | QA         |              | 20250121141508.0                                                                | False  |
+| 005   | PROD       |              | 20250122000000.0                                                                | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 008   | QA         |              | 250122n| azannaabn          |n aaa      annaa                                   | False  |
+| 008   | PROD       |              | 250122n| azannaabn          |n aaa                                              | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 010   | QA         |              | $a: n 2025180243                                                                | True   |
+| 010   | PROD       |              | $a: n 2025180243                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 040   | QA         |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+| 040   | PROD       |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 100   | QA         | 1            | $a: Weintz, P. J.                                                               | True   |
+| 100   | PROD       | 1            | $a: Weintz, P. J.                                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 374   | QA         |              | $a: Physicians $2: mesh                                                         | True   |
+| 374   | PROD       |              | $a: Physicians $2: mesh                                                         | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 670   | QA         |              | $a: Berichtigung einiger Sätze in der so eben erschienenen Schrift des Hn. Medicinal-Director Marcus über den herrschenden contagiösen Typhus nebst Uebersichten des Krankenstandes vom 20. März bis letzten Juni der hiesigen Militärspitäler, und zwey Krankengeschichten mit eben soviel andern Belegen, 1813: $b: title page (vom Königl. bairischen Regimentsarzt Doctor der Medicin und Chirurgie P.J. Weintz.) | True   |
+| 670   | PROD       |              | $a: Berichtigung einiger Sätze in der so eben erschienenen Schrift des Hn. Medicinal-Director Marcus über den herrschenden contagiösen Typhus nebst Uebersichten des Krankenstandes vom 20. März bis letzten Juni der hiesigen Militärspitäler, und zwey Krankengeschichten mit eben soviel andern Belegen, 1813: $b: title page (vom Königl. bairischen Regimentsarzt Doctor der Medicin und Chirurgie P.J. Weintz.) | True   |
+--------------------------------------------------------------------------------------------------------------------------
+
+Control Number: 9818977462006676
+
+Leader:
+| File       | Leader                   | Equal  |
+| QA         | 00836nz  a2200157n  4500 | False  |
+| PROD       | 00831nz  a2200157n  4500 | False  |
+
+Fields:
+| Tag   | File       | Indicators   | Value/Subfields                                                                  | Equal  |
+--------------------------------------------------------------------------------------------------------------------------
+| 001   | QA         |              | 9818977462006676                                                                | True   |
+| 001   | PROD       |              | 9818977462006676                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 003   | QA         |              | DNLM                                                                            | True   |
+| 003   | PROD       |              | DNLM                                                                            | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 005   | QA         |              | 20250121142850.0                                                                | False  |
+| 005   | PROD       |              | 20250122000000.0                                                                | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 008   | QA         |              | 250122n| azannaabn          |a aaa      annaa                                   | False  |
+| 008   | PROD       |              | 250122n| azannaabn          |a aaa                                              | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 010   | QA         |              | $a: n 2025180245                                                                | True   |
+| 010   | PROD       |              | $a: n 2025180245                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 040   | QA         |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+| 040   | PROD       |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 100   | QA         | 1            | $a: Nakase-Richardson, Risa                                                     | True   |
+| 100   | PROD       | 1            | $a: Nakase-Richardson, Risa                                                     | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 370   | QA         |              | $f: Tampa (Fla.) $2: naf                                                        | True   |
+| 370   | PROD       |              | $f: Tampa (Fla.) $2: naf                                                        | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 373   | QA         |              | $a: James A. Haley Veterans' Hospital $a: USF Health. Morsani College of Medicine $2: naf | True   |
+| 373   | PROD       |              | $a: James A. Haley Veterans' Hospital $a: USF Health. Morsani College of Medicine $2: naf | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 400   | QA         | 1            | $a: Richardson, Risa Nakase-                                                    | True   |
+| 400   | PROD       | 1            | $a: Richardson, Risa Nakase-                                                    | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 670   | QA         |              | $a: Comparing ways to identify sleep apnea in people with traumatic brain injury during inpatient rehabilitation, 2021: $b: PDF title page (Risa Nakase-Richardson, Mental Health and Behavioral Sciences, Defense and Veterans Brain Injury Center at James A. Haley Veterans’ Hospital; Division of Pulmonary and Sleep Medicine, Morsani College of Medicine, University of South Florida, Tampa) | True   |
+| 670   | PROD       |              | $a: Comparing ways to identify sleep apnea in people with traumatic brain injury during inpatient rehabilitation, 2021: $b: PDF title page (Risa Nakase-Richardson, Mental Health and Behavioral Sciences, Defense and Veterans Brain Injury Center at James A. Haley Veterans’ Hospital; Division of Pulmonary and Sleep Medicine, Morsani College of Medicine, University of South Florida, Tampa) | True   |
+--------------------------------------------------------------------------------------------------------------------------
+
+Control Number: 9818977262106676
+
+Leader:
+| File       | Leader                   | Equal  |
+| QA         | 00760nz  a2200157n  4500 | False  |
+| PROD       | 00755nz  a2200157n  4500 | False  |
+
+Fields:
+| Tag   | File       | Indicators   | Value/Subfields                                                                  | Equal  |
+--------------------------------------------------------------------------------------------------------------------------
+| 001   | QA         |              | 9818977262106676                                                                | True   |
+| 001   | PROD       |              | 9818977262106676                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 003   | QA         |              | DNLM                                                                            | True   |
+| 003   | PROD       |              | DNLM                                                                            | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 005   | QA         |              | 20250121132027.0                                                                | False  |
+| 005   | PROD       |              | 20250122000000.0                                                                | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 008   | QA         |              | 250122n| azannaabn          |n aaa      annaa                                   | False  |
+| 008   | PROD       |              | 250122n| azannaabn          |n aaa                                              | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 010   | QA         |              | $a: n 2025180242                                                                | True   |
+| 010   | PROD       |              | $a: n 2025180242                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 040   | QA         |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+| 040   | PROD       |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 046   | QA         |              | $f: 1984 $2: edtf                                                               | True   |
+| 046   | PROD       |              | $f: 1984 $2: edtf                                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 100   | QA         | 1            | $a: Fleming, Paul J. $q: (Paul Joseph), $d: 1984-                               | True   |
+| 100   | PROD       | 1            | $a: Fleming, Paul J. $q: (Paul Joseph), $d: 1984-                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 378   | QA         |              | $q: Paul Joseph                                                                 | True   |
+| 378   | PROD       |              | $q: Paul Joseph                                                                 | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 670   | QA         |              | $a: Imagine doing better, 2025: $b: ECIP t.p. (Paul J. Fleming) data view (b. 1984) | True   |
+| 670   | QA         |              | $a: University of Michigan School of Public Health web site, Jan. 21, 2025 $b: Faculty Profiles (Paul J Fleming, PhD, MPH; Associate Professor, Health Behavior and Health EquityFaculty Lead, Diversity, Equity, and Inclusion) Curriculum Vitae (Paul Joseph Fleming) $u: https://sph.umich.edu/faculty-profiles/fleming-paul.html | True   |
+| 670   | PROD       |              | $a: Imagine doing better, 2025: $b: ECIP t.p. (Paul J. Fleming) data view (b. 1984) | True   |
+| 670   | PROD       |              | $a: University of Michigan School of Public Health web site, Jan. 21, 2025 $b: Faculty Profiles (Paul J Fleming, PhD, MPH; Associate Professor, Health Behavior and Health EquityFaculty Lead, Diversity, Equity, and Inclusion) Curriculum Vitae (Paul Joseph Fleming) $u: https://sph.umich.edu/faculty-profiles/fleming-paul.html | True   |
+--------------------------------------------------------------------------------------------------------------------------
+
+Control Number: 9818977114606676
+
+Leader:
+| File       | Leader                   | Equal  |
+| QA         | 00479nz  a2200145n  4500 | False  |
+| PROD       | 00474nz  a2200145n  4500 | False  |
+
+Fields:
+| Tag   | File       | Indicators   | Value/Subfields                                                                  | Equal  |
+--------------------------------------------------------------------------------------------------------------------------
+| 001   | QA         |              | 9818977114606676                                                                | True   |
+| 001   | PROD       |              | 9818977114606676                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 003   | QA         |              | DNLM                                                                            | True   |
+| 003   | PROD       |              | DNLM                                                                            | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 005   | QA         |              | 20250121095553.0                                                                | False  |
+| 005   | PROD       |              | 20250122000000.0                                                                | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 008   | QA         |              | 250122n| azannaabn          |a aaa      annaa                                   | False  |
+| 008   | PROD       |              | 250122n| azannaabn          |a aaa                                              | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 010   | QA         |              | $a: n 2025180227                                                                | True   |
+| 010   | PROD       |              | $a: n 2025180227                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 040   | QA         |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+| 040   | PROD       |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 100   | QA         | 1            | $a: Pellegrino, Edmund D., $d: 1920-2013. $t: Works. $k: Selections             | True   |
+| 100   | PROD       | 1            | $a: Pellegrino, Edmund D., $d: 1920-2013. $t: Works. $k: Selections             | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 381   | QA         |              | $a: Selections                                                                  | True   |
+| 381   | PROD       |              | $a: Selections                                                                  | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 400   | QA         | 1            | $a: Pellegrino, Edmund D., $d: 1920-2013. $t: Pellegrino's clinical bioethics   | True   |
+| 400   | PROD       | 1            | $a: Pellegrino, Edmund D., $d: 1920-2013. $t: Pellegrino's clinical bioethics   | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 670   | QA         |              | $a: Pellegrino's clinical bioethics, 2025: $b: ECIP title page                  | True   |
+| 670   | PROD       |              | $a: Pellegrino's clinical bioethics, 2025: $b: ECIP title page                  | True   |
+--------------------------------------------------------------------------------------------------------------------------
+
+Control Number: 9818977114506676
+
+Leader:
+| File       | Leader                   | Equal  |
+| QA         | 00552nz  a2200133n  4500 | False  |
+| PROD       | 00547nz  a2200133n  4500 | False  |
+
+Fields:
+| Tag   | File       | Indicators   | Value/Subfields                                                                  | Equal  |
+--------------------------------------------------------------------------------------------------------------------------
+| 001   | QA         |              | 9818977114506676                                                                | True   |
+| 001   | PROD       |              | 9818977114506676                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 003   | QA         |              | DNLM                                                                            | True   |
+| 003   | PROD       |              | DNLM                                                                            | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 005   | QA         |              | 20250121095915.0                                                                | False  |
+| 005   | PROD       |              | 20250122000000.0                                                                | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 008   | QA         |              | 250122n| azannaabn          |n aaa      annaa                                   | False  |
+| 008   | PROD       |              | 250122n| azannaabn          |n aaa                                              | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 010   | QA         |              | $a: n 2025180228                                                                | True   |
+| 010   | PROD       |              | $a: n 2025180228                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 040   | QA         |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+| 040   | PROD       |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 046   | QA         |              | $f: 1948 $2: edtf                                                               | True   |
+| 046   | PROD       |              | $f: 1948 $2: edtf                                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 100   | QA         | 1            | $a: Donovan, G. Kevin, $d: 1948-                                                | True   |
+| 100   | PROD       | 1            | $a: Donovan, G. Kevin, $d: 1948-                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 670   | QA         |              | $a: Pellegrino's clinical bioethics, 2025: $b: ECIP title page (G. Kevin Donovan) data view (b. 1948) galley (MD, MA; Professor Emeritus and immediate past director, Pellegrino Center for Clinical Bioethics, Georgetown University, Washington, D.C.) | True   |
+| 670   | PROD       |              | $a: Pellegrino's clinical bioethics, 2025: $b: ECIP title page (G. Kevin Donovan) data view (b. 1948) galley (MD, MA; Professor Emeritus and immediate past director, Pellegrino Center for Clinical Bioethics, Georgetown University, Washington, D.C.) | True   |
+--------------------------------------------------------------------------------------------------------------------------
+
+Control Number: 9818977114406676
+
+Leader:
+| File       | Leader                   | Equal  |
+| QA         | 00576nz  a2200133n  4500 | False  |
+| PROD       | 00571nz  a2200133n  4500 | False  |
+
+Fields:
+| Tag   | File       | Indicators   | Value/Subfields                                                                  | Equal  |
+--------------------------------------------------------------------------------------------------------------------------
+| 001   | QA         |              | 9818977114406676                                                                | True   |
+| 001   | PROD       |              | 9818977114406676                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 003   | QA         |              | DNLM                                                                            | True   |
+| 003   | PROD       |              | DNLM                                                                            | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 005   | QA         |              | 20250121100239.0                                                                | False  |
+| 005   | PROD       |              | 20250122000000.0                                                                | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 008   | QA         |              | 250122n| azannaabn          |n aaa      annaa                                   | False  |
+| 008   | PROD       |              | 250122n| azannaabn          |n aaa                                              | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 010   | QA         |              | $a: n 2025180229                                                                | True   |
+| 010   | PROD       |              | $a: n 2025180229                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 040   | QA         |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+| 040   | PROD       |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 100   | QA         | 1            | $a: Miller, David G., $c: Ph.D.                                                 | True   |
+| 100   | PROD       | 1            | $a: Miller, David G., $c: Ph.D.                                                 | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 368   | QA         |              | $d: Ph.D.                                                                       | True   |
+| 368   | PROD       |              | $d: Ph.D.                                                                       | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 670   | QA         |              | $a: Pellegrino's clinical bioethics, 2025: $b: ECIP title page (David G. Miller) galley (PhD; Associate Director and Director of Academic Programs, Pellegrino Center for Clinical Bioethics; Adjunct Assistant Professor of Family Medicine, Georgetown University, Washington, D.C.) | True   |
+| 670   | PROD       |              | $a: Pellegrino's clinical bioethics, 2025: $b: ECIP title page (David G. Miller) galley (PhD; Associate Director and Director of Academic Programs, Pellegrino Center for Clinical Bioethics; Adjunct Assistant Professor of Family Medicine, Georgetown University, Washington, D.C.) | True   |
+--------------------------------------------------------------------------------------------------------------------------
+
+Control Number: 9818977114306676
+
+Leader:
+| File       | Leader                   | Equal  |
+| QA         | 00585nz  a2200133n  4500 | False  |
+| PROD       | 00580nz  a2200133n  4500 | False  |
+
+Fields:
+| Tag   | File       | Indicators   | Value/Subfields                                                                  | Equal  |
+--------------------------------------------------------------------------------------------------------------------------
+| 001   | QA         |              | 9818977114306676                                                                | True   |
+| 001   | PROD       |              | 9818977114306676                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 003   | QA         |              | DNLM                                                                            | True   |
+| 003   | PROD       |              | DNLM                                                                            | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 005   | QA         |              | 20250121104225.0                                                                | False  |
+| 005   | PROD       |              | 20250122000000.0                                                                | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 008   | QA         |              | 250122n| azannaabn          |a aaa      annaa                                   | False  |
+| 008   | PROD       |              | 250122n| azannaabn          |a aaa                                              | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 010   | QA         |              | $a: n 2025180230                                                                | True   |
+| 010   | PROD       |              | $a: n 2025180230                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 040   | QA         |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+| 040   | PROD       |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 100   | QA         | 1            | $a: Sotomayor, Claudia Ruiz                                                     | True   |
+| 100   | PROD       | 1            | $a: Sotomayor, Claudia Ruiz                                                     | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 400   | QA         | 1            | $a: Ruiz Sotomayor, Claudia                                                     | True   |
+| 400   | PROD       | 1            | $a: Ruiz Sotomayor, Claudia                                                     | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 670   | QA         |              | $a: Pellegrino's clinical bioethics, 2025: $b: ECIP title page (Claudia Ruiz Sotomayor) galley (MD, DBe; Chief of the Ethics Consultation Service, Pellegrino Center for Clnical Bioethics; Assistant Professor of Internal Medicine, Georgetown University, Washingotn, D.C.) | True   |
+| 670   | PROD       |              | $a: Pellegrino's clinical bioethics, 2025: $b: ECIP title page (Claudia Ruiz Sotomayor) galley (MD, DBe; Chief of the Ethics Consultation Service, Pellegrino Center for Clnical Bioethics; Assistant Professor of Internal Medicine, Georgetown University, Washingotn, D.C.) | True   |
+--------------------------------------------------------------------------------------------------------------------------
+
+Control Number: 9818977061706676
+
+Leader:
+| File       | Leader                   | Equal  |
+| QA         | 00651nz  a2200145n  4500 | False  |
+| PROD       | 00646nz  a2200145n  4500 | False  |
+
+Fields:
+| Tag   | File       | Indicators   | Value/Subfields                                                                  | Equal  |
+--------------------------------------------------------------------------------------------------------------------------
+| 001   | QA         |              | 9818977061706676                                                                | True   |
+| 001   | PROD       |              | 9818977061706676                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 003   | QA         |              | DNLM                                                                            | True   |
+| 003   | PROD       |              | DNLM                                                                            | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 005   | QA         |              | 20250121135407.0                                                                | False  |
+| 005   | PROD       |              | 20250122000000.0                                                                | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 008   | QA         |              | 250122n| azannaabn          |a aaa      annaa                                   | False  |
+| 008   | PROD       |              | 250122n| azannaabn          |a aaa                                              | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 010   | QA         |              | $a: n 2025180223                                                                | True   |
+| 010   | PROD       |              | $a: n 2025180223                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 024   | QA         | 7            | $a: 0000-0002-2649-2926 $2: orcid $1: https://orcid.org/0000-0002-2649-2926     | True   |
+| 024   | PROD       | 7            | $a: 0000-0002-2649-2926 $2: orcid $1: https://orcid.org/0000-0002-2649-2926     | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 040   | QA         |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+| 040   | PROD       |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 100   | QA         | 1            | $a: Soto Franco, Ilse                                                           | True   |
+| 100   | PROD       | 1            | $a: Soto Franco, Ilse                                                           | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 400   | QA         | 1            | $a: Franco, Ilse Soto                                                           | True   |
+| 400   | PROD       | 1            | $a: Franco, Ilse Soto                                                           | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 670   | QA         |              | $a: Discapacidad e inclusión social, 2022: $b: title page (Ilse Soto Franco) front cover flap (Nacionalidad Colombiana. Fisioterapeuta de la Universidad del Valle. Especialista en Fisioterapia en Neurorrehabilitación de la Escuela Colombiana de Rehabilitación) | True   |
+| 670   | PROD       |              | $a: Discapacidad e inclusión social, 2022: $b: title page (Ilse Soto Franco) front cover flap (Nacionalidad Colombiana. Fisioterapeuta de la Universidad del Valle. Especialista en Fisioterapia en Neurorrehabilitación de la Escuela Colombiana de Rehabilitación) | True   |
+--------------------------------------------------------------------------------------------------------------------------
+
+Control Number: 9818976857506676
+
+Leader:
+| File       | Leader                   | Equal  |
+| QA         | 00425nz  a2200121n  4500 | False  |
+| PROD       | 00420nz  a2200121n  4500 | False  |
+
+Fields:
+| Tag   | File       | Indicators   | Value/Subfields                                                                  | Equal  |
+--------------------------------------------------------------------------------------------------------------------------
+| 001   | QA         |              | 9818976857506676                                                                | True   |
+| 001   | PROD       |              | 9818976857506676                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 003   | QA         |              | DNLM                                                                            | True   |
+| 003   | PROD       |              | DNLM                                                                            | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 005   | QA         |              | 20250121092640.0                                                                | False  |
+| 005   | PROD       |              | 20250122000000.0                                                                | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 008   | QA         |              | 250122n| azannaabn          |n aaa      annaa                                   | False  |
+| 008   | PROD       |              | 250122n| azannaabn          |n aaa                                              | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 010   | QA         |              | $a: n 2025180187                                                                | True   |
+| 010   | PROD       |              | $a: n 2025180187                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 040   | QA         |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+| 040   | PROD       |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 100   | QA         | 1            | $a: Akbulut, Dilara                                                             | True   |
+| 100   | PROD       | 1            | $a: Akbulut, Dilara                                                             | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 670   | QA         |              | $a: Clinical cases from the NIH Clinical Center. Global multi-disciplinary management of severe tuberculosis, 2024: $b: PowerPoint screen (Dilara Akbulut, MD) | True   |
+| 670   | PROD       |              | $a: Clinical cases from the NIH Clinical Center. Global multi-disciplinary management of severe tuberculosis, 2024: $b: PowerPoint screen (Dilara Akbulut, MD) | True   |
+--------------------------------------------------------------------------------------------------------------------------
+
+Control Number: 9818976857406676
+
+Leader:
+| File       | Leader                   | Equal  |
+| QA         | 00436nz  a2200121n  4500 | False  |
+| PROD       | 00431nz  a2200121n  4500 | False  |
+
+Fields:
+| Tag   | File       | Indicators   | Value/Subfields                                                                  | Equal  |
+--------------------------------------------------------------------------------------------------------------------------
+| 001   | QA         |              | 9818976857406676                                                                | True   |
+| 001   | PROD       |              | 9818976857406676                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 003   | QA         |              | DNLM                                                                            | True   |
+| 003   | PROD       |              | DNLM                                                                            | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 005   | QA         |              | 20250121092712.0                                                                | False  |
+| 005   | PROD       |              | 20250122000000.0                                                                | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 008   | QA         |              | 250122n| azannaabn          |n aaa      annaa                                   | False  |
+| 008   | PROD       |              | 250122n| azannaabn          |n aaa                                              | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 010   | QA         |              | $a: n 2025180188                                                                | True   |
+| 010   | PROD       |              | $a: n 2025180188                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 040   | QA         |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+| 040   | PROD       |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 100   | QA         | 1            | $a: Fennelly, Kevin                                                             | True   |
+| 100   | PROD       | 1            | $a: Fennelly, Kevin                                                             | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 670   | QA         |              | $a: Clinical cases from the NIH Clinical Center. Global multi-disciplinary management of severe tuberculosis, 2024: $b: PowerPoint screen (Kevin Fennelly, MD, MPH, ATSF) | True   |
+| 670   | PROD       |              | $a: Clinical cases from the NIH Clinical Center. Global multi-disciplinary management of severe tuberculosis, 2024: $b: PowerPoint screen (Kevin Fennelly, MD, MPH, ATSF) | True   |
+--------------------------------------------------------------------------------------------------------------------------
+
+Control Number: 9818976857306676
+
+Leader:
+| File       | Leader                   | Equal  |
+| QA         | 00643nz  a2200145n  4500 | False  |
+| PROD       | 00638nz  a2200145n  4500 | False  |
+
+Fields:
+| Tag   | File       | Indicators   | Value/Subfields                                                                  | Equal  |
+--------------------------------------------------------------------------------------------------------------------------
+| 001   | QA         |              | 9818976857306676                                                                | True   |
+| 001   | PROD       |              | 9818976857306676                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 003   | QA         |              | DNLM                                                                            | True   |
+| 003   | PROD       |              | DNLM                                                                            | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 005   | QA         |              | 20250121102516.0                                                                | False  |
+| 005   | PROD       |              | 20250122000000.0                                                                | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 008   | QA         |              | 250122n| azannaabn          |a aaa      annaa                                   | False  |
+| 008   | PROD       |              | 250122n| azannaabn          |a aaa                                              | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 010   | QA         |              | $a: n 2025180191                                                                | True   |
+| 010   | PROD       |              | $a: n 2025180191                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 040   | QA         |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+| 040   | PROD       |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 100   | QA         | 1            | $a: Pinzon, Lilliam M.                                                          | True   |
+| 100   | PROD       | 1            | $a: Pinzon, Lilliam M.                                                          | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 373   | QA         |              | $a: University of Utah $a: National Institute of Dental and Craniofacial Research (U.S.) $2: naf | True   |
+| 373   | PROD       |              | $a: University of Utah $a: National Institute of Dental and Craniofacial Research (U.S.) $2: naf | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 400   | QA         | 1            | $a: Pinzon, Liliam                                                              | True   |
+| 400   | PROD       | 1            | $a: Pinzon, Liliam                                                              | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 670   | QA         |              | $a: Advancing health equity, 2024: $b: PowerPoint screen (Lilliam M.Pinzon, DDS, MS, MPH, Associate Professor, University of Utah; Visiting Scientist, National Institute of Dental and Craniofacial Research) title screen (Dr. Liliam Pinzon) | True   |
+| 670   | PROD       |              | $a: Advancing health equity, 2024: $b: PowerPoint screen (Lilliam M.Pinzon, DDS, MS, MPH, Associate Professor, University of Utah; Visiting Scientist, National Institute of Dental and Craniofacial Research) title screen (Dr. Liliam Pinzon) | True   |
+--------------------------------------------------------------------------------------------------------------------------
+
+Control Number: 9818976856706676
+
+Leader:
+| File       | Leader                   | Equal  |
+| QA         | 00987nz  a2200169n  4500 | False  |
+| PROD       | 00982nz  a2200169n  4500 | False  |
+
+Fields:
+| Tag   | File       | Indicators   | Value/Subfields                                                                  | Equal  |
+--------------------------------------------------------------------------------------------------------------------------
+| 001   | QA         |              | 9818976856706676                                                                | True   |
+| 001   | PROD       |              | 9818976856706676                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 003   | QA         |              | DNLM                                                                            | True   |
+| 003   | PROD       |              | DNLM                                                                            | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 005   | QA         |              | 20250121111821.0                                                                | False  |
+| 005   | PROD       |              | 20250122000000.0                                                                | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 008   | QA         |              | 250122n| azannaabn          |n ana      annaa                                   | False  |
+| 008   | PROD       |              | 250122n| azannaabn          |n ana                                              | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 010   | QA         |              | $a: n 2025180194                                                                | True   |
+| 010   | PROD       |              | $a: n 2025180194                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 040   | QA         |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+| 040   | PROD       |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 046   | QA         |              | $s: 2024-08-21 $t: 2024-08-22 $2: edtf                                          | True   |
+| 046   | PROD       |              | $s: 2024-08-21 $t: 2024-08-22 $2: edtf                                          | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 111   | QA         | 2            | $a: Impact of Diet on Mucosal Immunity and Immune-Mediated Digestive Diseases (Workshop) $d: (2024 : $c: Rockville, Md.) | True   |
+| 111   | PROD       | 2            | $a: Impact of Diet on Mucosal Immunity and Immune-Mediated Digestive Diseases (Workshop) $d: (2024 : $c: Rockville, Md.) | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 368   | QA         |              | $a: Workshop                                                                    | True   |
+| 368   | PROD       |              | $a: Workshop                                                                    | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 370   | QA         |              | $e: Rockville (Md.) $2: naf                                                     | True   |
+| 370   | PROD       |              | $e: Rockville (Md.) $2: naf                                                     | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 373   | QA         |              | $a: National Institutes of Health (U.S.). Office of Nutrition Research $a: National Institute of Allergy and Infectious Diseases (U.S.) $2: naf | True   |
+| 373   | PROD       |              | $a: National Institutes of Health (U.S.). Office of Nutrition Research $a: National Institute of Allergy and Infectious Diseases (U.S.) $2: naf | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 670   | QA         |              | $a: Impact of diet on mucosal immunity and immune-mediated digestive diseases, 2024: $b: title screen (Fisher Lane, August 21, 22, 2024) resource description (The Office of Nutrition Research (ONR) and NIAID, in collaboration with many other Institutes and Offices at NIH, have organized a workshop) narration (held at the Conference Center at Fishers Lane and online) | True   |
+| 670   | PROD       |              | $a: Impact of diet on mucosal immunity and immune-mediated digestive diseases, 2024: $b: title screen (Fisher Lane, August 21, 22, 2024) resource description (The Office of Nutrition Research (ONR) and NIAID, in collaboration with many other Institutes and Offices at NIH, have organized a workshop) narration (held at the Conference Center at Fishers Lane and online) | True   |
+--------------------------------------------------------------------------------------------------------------------------
+
+Control Number: 9818976856306676
+
+Leader:
+| File       | Leader                   | Equal  |
+| QA         | 00590nz  a2200133n  4500 | False  |
+| PROD       | 00585nz  a2200133n  4500 | False  |
+
+Fields:
+| Tag   | File       | Indicators   | Value/Subfields                                                                  | Equal  |
+--------------------------------------------------------------------------------------------------------------------------
+| 001   | QA         |              | 9818976856306676                                                                | True   |
+| 001   | PROD       |              | 9818976856306676                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 003   | QA         |              | DNLM                                                                            | True   |
+| 003   | PROD       |              | DNLM                                                                            | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 005   | QA         |              | 20250121120344.0                                                                | False  |
+| 005   | PROD       |              | 20250122000000.0                                                                | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 008   | QA         |              | 250122n| azannaabn          |n aaa      annaa                                   | False  |
+| 008   | PROD       |              | 250122n| azannaabn          |n aaa                                              | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 010   | QA         |              | $a: n 2025180200                                                                | True   |
+| 010   | PROD       |              | $a: n 2025180200                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 040   | QA         |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+| 040   | PROD       |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 100   | QA         | 1            | $a: Korman, Louis                                                               | True   |
+| 100   | PROD       | 1            | $a: Korman, Louis                                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 373   | QA         |              | $a: National Institute of Diabetes and Digestive and Kidney Diseases (U.S.) $2: naf | True   |
+| 373   | PROD       |              | $a: National Institute of Diabetes and Digestive and Kidney Diseases (U.S.) $2: naf | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 670   | QA         |              | $a: CDH1-associated hereditary diffuse gastric cancer in a child, 2024: $b: PowerPoint screen (Louis Korman, MD Attending Clinician, Digestive Diseases Branch National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)) | True   |
+| 670   | PROD       |              | $a: CDH1-associated hereditary diffuse gastric cancer in a child, 2024: $b: PowerPoint screen (Louis Korman, MD Attending Clinician, Digestive Diseases Branch National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)) | True   |
+--------------------------------------------------------------------------------------------------------------------------
+
+Control Number: 9818976856206676
+
+Leader:
+| File       | Leader                   | Equal  |
+| QA         | 00620nz  a2200145n  4500 | False  |
+| PROD       | 00615nz  a2200145n  4500 | False  |
+
+Fields:
+| Tag   | File       | Indicators   | Value/Subfields                                                                  | Equal  |
+--------------------------------------------------------------------------------------------------------------------------
+| 001   | QA         |              | 9818976856206676                                                                | True   |
+| 001   | PROD       |              | 9818976856206676                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 003   | QA         |              | DNLM                                                                            | True   |
+| 003   | PROD       |              | DNLM                                                                            | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 005   | QA         |              | 20250121121826.0                                                                | False  |
+| 005   | PROD       |              | 20250122000000.0                                                                | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 008   | QA         |              | 250122n| azannaabn          |n aaa      annaa                                   | False  |
+| 008   | PROD       |              | 250122n| azannaabn          |n aaa                                              | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 010   | QA         |              | $a: n 2025180201                                                                | True   |
+| 010   | PROD       |              | $a: n 2025180201                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 040   | QA         |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+| 040   | PROD       |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 100   | QA         | 1            | $a: Kim, Sun A. (Pathologist)                                                   | True   |
+| 100   | PROD       | 1            | $a: Kim, Sun A. (Pathologist)                                                   | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 373   | QA         |              | $a: National Cancer Institute (U.S.) $2: naf                                    | True   |
+| 373   | PROD       |              | $a: National Cancer Institute (U.S.) $2: naf                                    | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 374   | QA         |              | $a: Pathologist                                                                 | True   |
+| 374   | PROD       |              | $a: Pathologist                                                                 | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 670   | QA         |              | $a: CDH1-associated hereditary diffuse gastric cancer in a child, 2024: $b: PowerPoint screen (Sun A. Kim, MD, MS, PhD Staff Pathologist & Assistant Research Physician, Surgical and Digestive System Pathology, Laboratory of Pathology, National Cancer Institute) | True   |
+| 670   | PROD       |              | $a: CDH1-associated hereditary diffuse gastric cancer in a child, 2024: $b: PowerPoint screen (Sun A. Kim, MD, MS, PhD Staff Pathologist & Assistant Research Physician, Surgical and Digestive System Pathology, Laboratory of Pathology, National Cancer Institute) | True   |
+--------------------------------------------------------------------------------------------------------------------------
+
+Control Number: 9818976856106676
+
+Leader:
+| File       | Leader                   | Equal  |
+| QA         | 00589nz  a2200145n  4500 | False  |
+| PROD       | 00584nz  a2200145n  4500 | False  |
+
+Fields:
+| Tag   | File       | Indicators   | Value/Subfields                                                                  | Equal  |
+--------------------------------------------------------------------------------------------------------------------------
+| 001   | QA         |              | 9818976856106676                                                                | True   |
+| 001   | PROD       |              | 9818976856106676                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 003   | QA         |              | DNLM                                                                            | True   |
+| 003   | PROD       |              | DNLM                                                                            | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 005   | QA         |              | 20250121122009.0                                                                | False  |
+| 005   | PROD       |              | 20250122000000.0                                                                | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 008   | QA         |              | 250122n| azannaabn          |n aaa      annaa                                   | False  |
+| 008   | PROD       |              | 250122n| azannaabn          |n aaa                                              | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 010   | QA         |              | $a: n 2025180202                                                                | True   |
+| 010   | PROD       |              | $a: n 2025180202                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 040   | QA         |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+| 040   | PROD       |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 100   | QA         | 1            | $a: Fasaye, Grace-Ann                                                           | True   |
+| 100   | PROD       | 1            | $a: Fasaye, Grace-Ann                                                           | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 373   | QA         |              | $a: Center for Cancer Research (National Cancer Institute (U.S.)) $2: naf       | True   |
+| 373   | PROD       |              | $a: Center for Cancer Research (National Cancer Institute (U.S.)) $2: naf       | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 374   | QA         |              | $a: Genetic counselor                                                           | True   |
+| 374   | PROD       |              | $a: Genetic counselor                                                           | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 670   | QA         |              | $a: CDH1-associated hereditary diffuse gastric cancer in a child, 2024: $b: PowerPoint screen (Grace-Ann Fasaye, MD Genetic Counselor Genetics Branch Center For Cancer Research National Cancer Institute) | True   |
+| 670   | PROD       |              | $a: CDH1-associated hereditary diffuse gastric cancer in a child, 2024: $b: PowerPoint screen (Grace-Ann Fasaye, MD Genetic Counselor Genetics Branch Center For Cancer Research National Cancer Institute) | True   |
+--------------------------------------------------------------------------------------------------------------------------
+
+Control Number: 9818976657406676
+
+Leader:
+| File       | Leader                   | Equal  |
+| QA         | 00485nz  a2200121n  4500 | False  |
+| PROD       | 00480nz  a2200121n  4500 | False  |
+
+Fields:
+| Tag   | File       | Indicators   | Value/Subfields                                                                  | Equal  |
+--------------------------------------------------------------------------------------------------------------------------
+| 001   | QA         |              | 9818976657406676                                                                | True   |
+| 001   | PROD       |              | 9818976657406676                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 003   | QA         |              | DNLM                                                                            | True   |
+| 003   | PROD       |              | DNLM                                                                            | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 005   | QA         |              | 20250121142439.0                                                                | False  |
+| 005   | PROD       |              | 20250122000000.0                                                                | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 008   | QA         |              | 250122n| azannaabn          |n aaa      annaa                                   | False  |
+| 008   | PROD       |              | 250122n| azannaabn          |n aaa                                              | False  |
+--------------------------------------------------------------------------------------------------------------------------
+| 010   | QA         |              | $a: n 2025180189                                                                | True   |
+| 010   | PROD       |              | $a: n 2025180189                                                                | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 040   | QA         |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+| 040   | PROD       |              | $a: DNLM $b: eng $e: rda $c: DNLM                                               | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 100   | QA         | 1            | $a: Gherini, Claire                                                             | True   |
+| 100   | PROD       | 1            | $a: Gherini, Claire                                                             | True   |
+--------------------------------------------------------------------------------------------------------------------------
+| 670   | QA         |              | $a: "Experiment and good sense must direct you", 2016: $b: PDF title page (Claire Gherini) page 437 (Assistant Professor of History, Fordham University; Ph.D., Department of History, The Johns Hopkins University, 2016) | True   |
+| 670   | PROD       |              | $a: "Experiment and good sense must direct you", 2016: $b: PDF title page (Claire Gherini) page 437 (Assistant Professor of History, Fordham University; Ph.D., Department of History, The Johns Hopkins University, 2016) | True   |
+--------------------------------------------------------------------------------------------------------------------------
+

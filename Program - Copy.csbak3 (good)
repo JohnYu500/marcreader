@@ -1,0 +1,244 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string qa_naco = @"C:\Users\gyu\source\marcreader\naco.aut.data.d20250122qa"; // First MARC file
+        string pr_naco = @"C:\Users\gyu\source\marcreader\naco.aut.data.d250122prod"; // Second MARC file
+
+        // Parse both MARC files
+        List<MarcRecord> records1 = ParseMarcFile(qa_naco);
+        List<MarcRecord> records2 = ParseMarcFile(pr_naco);
+
+        // Display total number of records in each file
+        Console.WriteLine("----- Comparison Report -----");
+        Console.WriteLine();
+        Console.WriteLine($"Total records in QA file: {records1.Count}");
+        Console.WriteLine($"Total records in PROD file: {records2.Count}");
+        Console.WriteLine();
+
+        // Match records by control number (001 field)
+        var matchedRecords = MatchRecords(records1, records2);
+
+        // Generate the comparison report
+        GenerateComparisonReport(matchedRecords);
+    }
+
+    static List<MarcRecord> ParseMarcFile(string filePath)
+    {
+        List<MarcRecord> records = new List<MarcRecord>();
+        byte[] fileBytes = File.ReadAllBytes(filePath);
+
+        int position = 0;
+        while (position < fileBytes.Length)
+        {
+            // Read the record length (first 5 bytes of the leader)
+            string recordLengthStr = Encoding.UTF8.GetString(fileBytes, position, 5);
+            int recordLength = int.Parse(recordLengthStr);
+
+            // Extract the record data
+            byte[] recordBytes = new byte[recordLength];
+            Array.Copy(fileBytes, position, recordBytes, 0, recordLength);
+            position += recordLength;
+
+            // Parse the record
+            MarcRecord record = ParseMarcRecord(recordBytes);
+            records.Add(record);
+        }
+
+        return records;
+    }
+
+    static MarcRecord ParseMarcRecord(byte[] recordBytes)
+    {
+        MarcRecord record = new MarcRecord();
+
+        // Read the leader (first 24 bytes)
+        record.Leader = Encoding.UTF8.GetString(recordBytes, 0, 24);
+
+        // Read the directory
+        int baseAddress = int.Parse(Encoding.UTF8.GetString(recordBytes, 12, 5));
+        int directoryEnd = baseAddress - 1;
+
+        int dirPosition = 24;
+        while (dirPosition < directoryEnd)
+        {
+            // Read the directory entry (12 bytes per entry)
+            string tag = Encoding.UTF8.GetString(recordBytes, dirPosition, 3);
+            int fieldLength = int.Parse(Encoding.UTF8.GetString(recordBytes, dirPosition + 3, 4));
+            int fieldStart = int.Parse(Encoding.UTF8.GetString(recordBytes, dirPosition + 7, 5));
+
+            // Extract the field data
+            string fieldData = Encoding.UTF8.GetString(recordBytes, baseAddress + fieldStart, fieldLength);
+
+            // Parse the field
+            MarcField field = ParseMarcField(tag, fieldData);
+            record.Fields.Add(field);
+
+            // Store the control number (001 field) for matching
+            if (tag == "001")
+            {
+                record.ControlNumber = fieldData;
+            }
+
+            dirPosition += 12;
+        }
+
+        return record;
+    }
+
+    static MarcField ParseMarcField(string tag, string fieldData)
+    {
+        MarcField field = new MarcField { Tag = tag };
+
+        if (tag == "001" || tag == "003" || tag == "005" || tag == "008")
+        {
+            // Control field (no indicators or subfields)
+            field.Value = fieldData;
+        }
+        else
+        {
+            // Data field (with indicators and subfields)
+            field.Indicators = new char[] { fieldData[0], fieldData[1] };
+            string subfieldData = fieldData.Substring(2);
+
+            // Parse subfields
+            field.Subfields = new List<MarcSubfield>();
+            string[] subfields = subfieldData.Split('$');
+            for (int i = 1; i < subfields.Length; i++)
+            {
+                if (subfields[i].Length > 0)
+                {
+                    char subfieldCode = subfields[i][0];
+                    string subfieldValue = subfields[i].Substring(1);
+                    field.Subfields.Add(new MarcSubfield { Code = subfieldCode, Value = subfieldValue });
+                }
+            }
+        }
+
+        return field;
+    }
+
+    static List<(MarcRecord, MarcRecord)> MatchRecords(List<MarcRecord> records1, List<MarcRecord> records2)
+    {
+        // Create a dictionary to map control numbers to records
+        var dict1 = records1.ToDictionary(r => r.ControlNumber);
+        var dict2 = records2.ToDictionary(r => r.ControlNumber);
+
+        // Match records by control number
+        List<(MarcRecord, MarcRecord)> matchedRecords = new List<(MarcRecord, MarcRecord)>();
+        foreach (var controlNumber in dict1.Keys.Intersect(dict2.Keys))
+        {
+            matchedRecords.Add((dict1[controlNumber], dict2[controlNumber]));
+        }
+
+        return matchedRecords;
+    }
+
+    static void GenerateComparisonReport(List<(MarcRecord Record1, MarcRecord Record2)> matchedRecords)
+    {
+        Console.WriteLine("----- Comparison Report -----");
+        Console.WriteLine();
+
+        foreach (var (record1, record2) in matchedRecords)
+        {
+            Console.WriteLine($"Control Number: {record1.ControlNumber}");
+            Console.WriteLine();
+
+            // Compare leaders
+            Console.WriteLine("Leader:");
+            Console.WriteLine($"| {"File",-10} | {"Leader",-24} |");
+            Console.WriteLine($"| {"QA",-10} | {record1.Leader,-24} |");
+            Console.WriteLine($"| {"PROD",-10} | {record2.Leader,-24} |");
+            Console.WriteLine();
+
+            // Compare fields
+            Console.WriteLine("Fields:");
+            var fields1 = record1.Fields.GroupBy(f => f.Tag).ToDictionary(g => g.Key, g => g.ToList());
+            var fields2 = record2.Fields.GroupBy(f => f.Tag).ToDictionary(g => g.Key, g => g.ToList());
+
+            // Get all unique tags
+            var allTags = fields1.Keys.Union(fields2.Keys).OrderBy(t => t);
+
+            // Display table header
+            Console.WriteLine($"| {"Tag",-5} | {"File",-10} | {"Indicators",-12} | {"Value/Subfields",-80} |");
+            Console.WriteLine(new string('-', 115));
+
+            foreach (var tag in allTags)
+            {
+                fields1.TryGetValue(tag, out var fields1List);
+                fields2.TryGetValue(tag, out var fields2List);
+
+                // Display fields from QA file
+                if (fields1List != null)
+                {
+                    foreach (var field in fields1List)
+                    {
+                        string value = field.Tag == "001" || field.Tag == "003" || field.Tag == "005" || field.Tag == "008"
+                            ? field.Value
+                            : FormatSubfields(field.Subfields);
+                        Console.WriteLine($"| {tag,-5} | {"QA",-10} | {new string(field.Indicators ?? new char[] { ' ', ' ' }),-12} | {value,-80} |");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine($"| {tag,-5} | {"QA",-10} | {"",-12} | {"MISSING",-80} |");
+                }
+
+                // Display fields from PROD file
+                if (fields2List != null)
+                {
+                    foreach (var field in fields2List)
+                    {
+                        string value = field.Tag == "001" || field.Tag == "003" || field.Tag == "005" || field.Tag == "008"
+                            ? field.Value
+                            : FormatSubfields(field.Subfields);
+                        Console.WriteLine($"| {tag,-5} | {"PROD",-10} | {new string(field.Indicators ?? new char[] { ' ', ' ' }),-12} | {value,-80} |");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine($"| {tag,-5} | {"PROD",-10} | {"",-12} | {"MISSING",-80} |");
+                }
+
+                Console.WriteLine(new string('-', 115));
+            }
+
+            Console.WriteLine();
+        }
+    }
+
+    static string FormatSubfields(List<MarcSubfield> subfields)
+    {
+        if (subfields == null || subfields.Count == 0)
+            return string.Empty;
+
+        return string.Join(" ", subfields.Select(sf => $"${sf.Code}: {sf.Value}"));
+    }
+}
+
+class MarcRecord
+{
+    public string Leader { get; set; }
+    public string ControlNumber { get; set; }
+    public List<MarcField> Fields { get; set; } = new List<MarcField>();
+}
+
+class MarcField
+{
+    public string Tag { get; set; }
+    public char[] Indicators { get; set; }
+    public List<MarcSubfield> Subfields { get; set; }
+    public string Value { get; set; } // For control fields
+}
+
+class MarcSubfield
+{
+    public char Code { get; set; }
+    public string Value { get; set; }
+}
