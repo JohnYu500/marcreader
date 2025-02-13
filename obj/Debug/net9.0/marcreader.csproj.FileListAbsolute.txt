@@ -12,3 +12,4 @@ C:\Users\gyu\source\marcreader\obj\Debug\net9.0\refint\marcreader.dll
 C:\Users\gyu\source\marcreader\obj\Debug\net9.0\marcreader.pdb
 C:\Users\gyu\source\marcreader\obj\Debug\net9.0\marcreader.genruntimeconfig.cache
 C:\Users\gyu\source\marcreader\obj\Debug\net9.0\ref\marcreader.dll
+C:\Users\gyu\source\marcreader\obj\Debug\net9.0\marcreader.sourcelink.json

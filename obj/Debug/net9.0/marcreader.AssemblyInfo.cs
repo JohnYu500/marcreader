@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("marcreader")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8616a5ce4611eb19a24126b2b6fa0d2bb906e26a")]
 [assembly: System.Reflection.AssemblyProductAttribute("marcreader")]
 [assembly: System.Reflection.AssemblyTitleAttribute("marcreader")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

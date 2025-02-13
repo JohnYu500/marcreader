@@ -17,10 +17,10 @@ class Program
         string reportFilePath = $@"{basePath}\comparison_report.txt"; // Output report file
 
         
-        qa_naco = $@"{basePath}\SI-NEW.naco.aut.data.d20250205";
-        pr_naco = $@"{basePath}\pr.naco.aut.data.d250205";
+        qa_naco = $@"{basePath}\SI.catfile.bib.20250213";
+        pr_naco = $@"{basePath}\LEG.catfile.bib.20250213";
        //pr_naco = $@"{basePath}\SI-NEW.naco.aut.data.d20250205";
-        reportFilePath = $@"{basePath}\naco_comparison_report-d250205.txt";
+        reportFilePath = $@"{basePath}\naco_comparison_report-d250213.txt";
         
 
         string fileCompareResult = "";
@@ -76,7 +76,8 @@ class Program
         else if (records1.Count == records2.Count && records1.Count == matchedRecords.Count)
         {
             
-            fileCompareResult = $"The two file have the same number of records and every record matches based on the control number. ";        
+            fileCompareResult = $"The two file have the same number of records and every record matches based on the control number. ";   
+            fileCompareResult += $"The QA records: {records1.Count}; Prod records: {records2.Count}";        
         }
         
         
